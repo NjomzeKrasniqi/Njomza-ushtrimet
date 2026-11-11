@@ -117,5 +117,88 @@ console.log("Minuta që mbeten pas ndarjes me 60 (%):", minutaMbetura);
 
 
 
+//Detyra 7
+let stoku = 120;
+console.log("Stoku fillestar në depo:", stoku);
+
+stoku -= 18; 
+console.log("Pas shitjes së parë (-18):", stoku);
+
+stoku -= 27; 
+console.log("Pas shitjes së dytë (-27):", stoku);
+
+stoku += 35; 
+console.log("Pas shtimit të njësive të reja (+35):", stoku);
+
+let cmimiPerNjesi = 6.75;
+let vleraStokutPeryndimtar = stoku * cmimiPerNjesi;
+
+console.log("Stoku përfundimtar (sasia):", stoku);
+console.log("Vlera e stokut përfundimtar në euro:", vleraStokutPeryndimtar);
 
 
+
+
+//Detyra 8
+let fletePune = 157;
+let fletePerStudent = 6;
+
+let grupet = parseInt(fletePune / fletePerStudent);
+let fleteMbetura = fletePune % fletePerStudent;
+
+console.log("Numri i grupeve të plota:", grupet);
+console.log("Fletët e mbetura (%):", fleteMbetura);
+
+let kontrolli = (grupet * 6) + fleteMbetura;
+console.log("Kontrolli ((grupet * 6) + mbetja):", kontrolli);
+
+
+
+
+//Detyra 9
+let cmimi1 = Number("19.90");
+let sasia1 = 2;
+
+let cmimi2 = Number("8.50");
+let sasia2 = 3;
+
+let shumaArtikulli1 = cmimi1 * sasia1;
+let shumaArtikulli2 = cmimi2 * sasia2;
+let shumaPorosise = shumaArtikulli1 + shumaArtikulli2;
+
+console.log("Totali i artikullit 1:", shumaArtikulli1);
+console.log("Totali i artikullit 2:", shumaArtikulli2);
+console.log("Shuma e porosisë (pa taksë):", shumaPorosise);
+
+let tarifaSherbimi = shumaPorosise * 0.10;
+let shumaFinale = shumaPorosise + tarifaSherbimi;
+
+console.log("Shuma finale me dy shifra pas presjes:", shumaFinale.toFixed(2));
+console.log("Tipi i vlerës së formatuar:", typeof shumaFinale.toFixed(2));
+
+
+
+
+//Detyra 10
+let pjesemarres = 45;
+let pagesaSecilit = 12;
+
+let teArdhurat = pjesemarres * pagesaSecilit;
+
+let salla = 180;
+let materialet = 95;
+let reklama = 60;
+
+let shpenzimetTotale = salla + materialet + reklama;
+let diferenca = teArdhurat - shpenzimetTotale;
+
+console.log("Të ardhurat:", teArdhurat);
+console.log("Shpenzimet totale:", shpenzimetTotale);
+console.log("Diferenca (fitimi/humbja):", diferenca);
+
+shpenzimetTotale += 25;
+let diferencaRe = teArdhurat - shpenzimetTotale;
+
+console.log("--- Raporti pas shpenzimeve të paparashikuara ---");
+console.log("Shpenzimet e reja totale:", shpenzimetTotale);
+console.log("Diferenca e re:", diferencaRe);
