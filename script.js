@@ -1,3 +1,5 @@
+
+// Detyra 1
 const cmimiLibra = 12.50;
 const sasiaLibra = 3;
 
@@ -16,7 +18,7 @@ console.log("Fatura totale (përfshirë transportin):", shumaTotale);
 
 
 
-
+//Detyra 2
 let aktiviteti = 18;
 let projekti = 24;
 let provimi = 43;
@@ -37,7 +39,7 @@ console.log("Totali i ri:", totaliRij);
 console.log("Përqindja e re:", perqindjaRe + "%");
 
 
-
+//Detra 3
 let akomodimi = 42;
 let transporti = 42; 
 let ushqimi = 57;
@@ -54,7 +56,7 @@ console.log("Pjesa që i takon secilit person është " + pjesaPerPerson + " eur
 console.log("Nëse secili ka buxhet prej 80 eurosh, secilit i mbeten " + mbetjaSecilit + " euro.");
 
 
-
+//Detyra 4
 let sasiaProdukti1 = 2;
 let cmimiProdukti1 = 35;
 
@@ -72,6 +74,45 @@ console.log("Hapi 3 - Çmimi pas zbritjes:", cmimiPasZbritjes);
 
 let vleraPerrfundimtare = cmimiPasZbritjes + 4; 
 console.log("Hapi 4 - Vlera përfundimtare (me 4 € transport):", vleraPerrfundimtare);
+
+
+
+//Detyra 5
+let v1 = "25";
+let v2 = "17";
+let v3 = "8";
+
+let rezultatiPaKonvertim = v1 + v2 + v3;
+console.log("Rezultati pa konvertim:", rezultatiPaKonvertim);
+
+let numri1 = Number(v1);
+let numri2 = Number(v2);
+let numri3 = Number(v3);
+
+let shuma = numri1 + numri2 + numri3;
+let mesatarja = shuma / 3;
+
+console.log("Shuma:", shuma);
+console.log("Mesatarja:", mesatarja);
+console.log("Tipi i shumës:", typeof shuma);
+console.log("Tipi i mesatares:", typeof mesatarja);
+
+
+
+
+//Detyra 6
+let hënën = 95;
+let martën = 80;
+let mërkurën = 115;
+
+let gjithsejMinuta = hënën + martën + mërkurën;
+let kohaNeOre = gjithsejMinuta / 60;
+
+let minutaMbetura = gjithsejMinuta % 60;
+
+console.log("Gjithsej minuta:", gjithsejMinuta);
+console.log("Koha në orë (numër dhjetor):", kohaNeOre.toFixed(2));
+console.log("Minuta që mbeten pas ndarjes me 60 (%):", minutaMbetura);
 
 
 
